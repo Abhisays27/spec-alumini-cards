@@ -35,14 +35,7 @@ body {
   height: 17rem;
   overflow: hidden;
 }
-.container .card .card-img .flip-card-front, .container .card .card-img .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
- /* Safari */
-  backface-visibility: hidden;
-}
+
 
 .card-img img:hover {
   transform: scale(1.1); 
@@ -52,15 +45,8 @@ body {
   transition: all .5s ease-in-out;
 
 }
-.container .card .card-img .flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-.container .card .card-img .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
+
+
 .container .card .card-img img {
   width: 100%;
   height: 17rem;
@@ -82,6 +68,34 @@ body {
   text-decoration: none;
   font-size: 14px;
   margin-left: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 65%;
+    margin: 4rem auto;
+    padding: 14px;
+    font-family: Roboto;
+}
+.container .card {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #000;
+  width: 14rem;
+  height: 22rem;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 8px;
+  
+}
+}
+.social-media:hover{
+  cursor: pointer;
+}
+
+  .social-media {
+    margin-left: 131px;
+    margin-top: -24px;
 }
 
 
